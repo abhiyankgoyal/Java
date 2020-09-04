@@ -7,7 +7,7 @@ class Carr {
 
 	Carr(int p, int a, String n){
 
-		price =p;
+		price=p;
 		avg= a;
 		name=n;
 	}
@@ -44,10 +44,10 @@ public class Cararray {
 		}*/		
 		int s=0,e=cars.length-1;
 		int found =0; 
-
+		int mid;
 		while(s<=e){
 
-			int mid=(s+e)/2;
+			mid=(s+e)/2;
 			if(cars[mid].price==400000)
 			{
 				System.out.println(cars[mid].name);

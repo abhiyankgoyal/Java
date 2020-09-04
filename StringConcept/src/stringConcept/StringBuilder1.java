@@ -17,8 +17,8 @@ public class StringBuilder1 {
 
 	public static void main(String[] args) {
 		
-		StringBuilder sb = new StringBuilder("abc");
-		
+		StringBuilder sb = new StringBuilder("abcdefgh");
+		System.out.println(sb);
 		sb.append("kq"); // adds at the end
 		System.out.println(sb);
 		System.out.println(sb.charAt(1));
@@ -28,7 +28,8 @@ public class StringBuilder1 {
 		System.out.println(sb);
 		sb.delete(1,4); // 2 is not included, it is from 1 to less than 4
 		System.out.println(sb.toString()); // here StringBuilder is converted into string
-		
+		String subString = sb.substring(4,8);
+		System.out.println(subString);
 		StringBuffer sbf = new StringBuffer("hello");
 		sbf.append(" world");
 		System.out.println(sbf);

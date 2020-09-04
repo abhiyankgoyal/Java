@@ -3,7 +3,7 @@ public class Search3 {
 
 	public int LinearSearch(int[] a, int k) {
 		int count=0;
-		for(int i:a) // to count length of array or we can just do a.length
+		for(int i:a) // to count length of array with the help of for each loop or we can just do a.length
 		{
 			count++;
 		}

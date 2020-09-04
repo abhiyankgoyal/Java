@@ -14,7 +14,7 @@ public class StringConcept {
 		
 		for(int i=0;i<ch.length;i++)
 		{
-			System.out.print(ch[i]+",");
+			System.out.print(ch[i]+" ");
 		}
 		System.out.println();
 		
@@ -57,7 +57,7 @@ public class StringConcept {
 		
 		String st = new String("hello how r you");
 		for(int i=0;i<st.length();i++) {
-			System.out.println(st.charAt(i));
+			System.out.print(st.charAt(i) + " ");
 		}
 		//System.out.println(st.charAt(st.length())); will give error StringIndexOutOfBoundsException
 	}

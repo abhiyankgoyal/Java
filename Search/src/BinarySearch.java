@@ -1,27 +1,35 @@
+/*
+ * -----------------Binary Search-----------------
+ * -> array must be sorted order 
+ * -> time complexity O(log(n))
+ * 
+ */
+
+
 import java.util.Scanner;
 
 public class BinarySearch {
 
 	public int binary(int[] a, int k) {
 
-		int startindex=0;
-		int endindex=a.length -1; // i am considering the array from startindex to endindex
-
-		while(startindex <= endindex)
+		int startIndex=0;
+		int endIndex=a.length -1; // i am considering the array from startIndex to endIndex
+		int mid;
+		while(startIndex <= endIndex)
 		{
-			int mid=(startindex + endindex)/2;
+			mid=(startIndex + endIndex)/2;
 
-			if(a[mid]==k)
+			if(a[mid] == k)
 			{
 				return mid;
 			}
-			else if(a[mid]<k)
+			else if(k > a[mid])
 			{
-				startindex=mid+1;
+				startIndex = mid+1;
 			}
 			else
 			{
-				endindex=mid-1;
+				endIndex = mid-1;
 			}
 		}
 		return -1;
@@ -33,7 +41,7 @@ public class BinarySearch {
 
 		BinarySearch obj=new BinarySearch();
 		int n,val;
-		Scanner sc=new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 		System.out.println("enter the no. of elemets in the array");
 		n=sc.nextInt();
 		int[] arr=new int[n];
@@ -44,8 +52,8 @@ public class BinarySearch {
 		}
 		System.out.println("array is: ");
 		for(int i=0;i<n;i++)
-			System.out.println(arr[i]);
-		System.out.println("enter the value ");
+			System.out.print(arr[i] + " ");
+		System.out.println("\nenter the value ");
 		val=sc.nextInt();
 		int res=obj.binary(arr,val);
 		if(res==-1)

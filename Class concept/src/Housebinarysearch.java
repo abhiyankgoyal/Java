@@ -22,7 +22,7 @@ class House1{
 	}
 	public int getArea()  //camelcase 
 	{
-		return this.l*this.w;
+		return this.l*this.w; // return this.area;
 	}
 	public void setLength(int l)
 	{
@@ -37,8 +37,11 @@ class House1{
 	
 	public String toString() // to print object
 	{
-		String res = this.l + " " + this.w +" "+ this.area;
+		String res = this.l + " " + this.w + " " + this.area;
 		return res;
+/*		                     OR
+		return this.l + " " + this.w + " " + this.area;
+*/
 	}
 	
 }

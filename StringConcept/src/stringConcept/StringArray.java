@@ -10,11 +10,11 @@ public class StringArray {
 		strarr[1] = "defg";
 		strarr[2] = "hijk";
 		
-		String[] strarr2 = {"fsft", "erget", "hdth", "oijri", "hbvjcnm"};
+		//String[] strarr2 = {"fsft", "erget", "hdth", "oijri", "hbvjcnm"};
 	    
 		for(int i=0; i<strarr.length; i++) // notice that here we didn't use brackets after length 
 		{
-			System.out.print(strarr[i] + ", ");
+			System.out.print(strarr[i] + " ");
 		}
 		System.out.println();
 		
@@ -26,7 +26,7 @@ public class StringArray {
 		
 		for(int i=0; i<sarr.length; i++)
 		{
-			System.out.print(sarr[i] + ", ");
+			System.out.print(sarr[i] + " ");
 		}
 
 	}
