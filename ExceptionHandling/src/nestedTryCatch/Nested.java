@@ -26,6 +26,7 @@ public class Nested {
 		catch(Exception e) {
 			System.out.println("exception handled");
 		}
+		System.out.println("normal flow..");  
 		
 	}
 
