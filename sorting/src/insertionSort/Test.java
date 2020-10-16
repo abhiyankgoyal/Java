@@ -19,6 +19,8 @@ public class Test {
 		System.out.println("enter a string");
 		s=sc2.nextLine();
 		System.out.println(s);
+		sc.close();
+		sc2.close();
 	}
 
 }

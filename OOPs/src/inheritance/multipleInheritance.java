@@ -25,7 +25,7 @@ class F{
 	}
 }
 
-//class G extends E, F { // multiple inheritance is not supported to avoid ambiguity
+//class G extends E, F { // multiple inheritance is not supported to avoid ambiguity i.e. since both the class contains same function therefor java compiler confuses which function is of class A and which is of class B, therefore ambiguity occurs.  
 	
 //	getA();
 //}

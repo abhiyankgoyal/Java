@@ -1,5 +1,6 @@
 import java.util.Scanner;
 class Car {
+	
 	int price;
 	int avg;
 	String name;

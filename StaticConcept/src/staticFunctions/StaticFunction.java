@@ -3,9 +3,10 @@ package staticFunctions;
  * 
  * -----------------Static function--------------------
  * - it does not behave as a normal function of class
- * - you cannot directly access class variable inside class static function.
+ * - you can use class static variable in static method directly.
+ * - you cannot directly access class variable(non-static) inside class static method.
  * - to use a variable you need to create an object.
- * - static function cannot make a call to static function directly. by creating object of class we can do the same.
+ * - non-static function cannot make a call to static function directly. by creating object of class we can do the same.
  * 
  *  To access static function:
  * - by creating object
@@ -21,7 +22,7 @@ class Student{
 	{
 		System.out.println("student m1");
 	}
-	public void abc() {
+	public static void abc() {
 		studentM1();
 	}
 
@@ -32,6 +33,7 @@ public class StaticFunction {
 		
 		System.out.println("m1 function");
 	}
+	
 	public static void main(String[] args) {
 		
 		StaticFunction sf = new StaticFunction();
@@ -42,7 +44,9 @@ public class StaticFunction {
 		Student s1 = new Student();
 		s1.studentM1();
 		Student.studentM1();
-		//studentM1();
+		//studentM1(); not allowed
+		//Student.abc(); not allowed
+		s1.abc();
 	}
 
 }

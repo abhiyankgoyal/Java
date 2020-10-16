@@ -22,6 +22,7 @@ public class Cararray {
 		Carr c3= new Carr(300000,22,"dzire");
 		Carr c4= new Carr(400000,23,"i20");
 		Carr c5= new Carr(500000,24,"i10");
+		
 		Carr[] cars= {c1,c2,c3,c4,c5};
 
 		/*cars[0]= c1;

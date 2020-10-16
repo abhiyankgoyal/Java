@@ -1,5 +1,7 @@
 package lcmHcf;
 
+import java.lang.Math;
+
 public class LCM {
 
 	public static int lcmOfTwoNos(int n1, int n2) {
@@ -7,14 +9,15 @@ public class LCM {
 		if(n1==n2) {
 			return n1;
 		}
-		lcm = (n1>n2)? n1:n2;
+		lcm = (n1>n2)? n1:n2; // Math.max(a,b)
 		while(true) {
 			if(lcm%n1 == 0 && lcm%n2 == 0) {
-				break;
+				//break;
+				return lcm;
 			}
 			lcm++;
 		}
-		return lcm;
+		//return lcm;
 	}
 	
 	public static void main(String[] args) {

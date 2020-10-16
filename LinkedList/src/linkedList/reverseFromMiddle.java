@@ -87,7 +87,7 @@ public class reverseFromMiddle {
 	}
 	
 	public Node11 reverse(Node11 head) {
-		if(head ==null || head.next ==null) {
+		if(head == null || head.next == null) {
 			return head;
 		}
 		Node11 curr = head;

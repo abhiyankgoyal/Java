@@ -126,7 +126,7 @@ public class SortStudent {
 		{
 			System.out.println("which student details you want to change?(1-"+a+")");
 			int choice=sc.nextInt();
-			while(choice<1 || choice> +a)
+			while(choice<1 || choice>a)
 			{
 				System.out.println("invalid input");
 				System.out.println("which student details you want to change?(1-"+a+")");

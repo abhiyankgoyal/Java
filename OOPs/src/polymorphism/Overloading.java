@@ -1,10 +1,13 @@
 package polymorphism;
 
-public class Overloading { //compile time polymorphism
+// polymorphism : It is the ability for the message/data to be processed in many forms as the word itself means many + forms = many forms. 
+
+public class Overloading { //Compile-time polymorphism (function overloading) as it occurs at compile time.
 	
 	/*
 	 * Overloading when number of arguments are different
-	 * */
+	 */
+	
 	public int add (int a, int b) {
 		return a+b;
 	}

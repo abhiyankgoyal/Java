@@ -22,9 +22,21 @@ public class insertionSort {
 					if(a[j+1]<a[j])
 					{
 						// System.out.println(a[j+1]+" "+a[j]);
-						int temp = a[j];
-						a[j]=a[j+1];
-						a[j+1]=temp;
+						
+//						M-1
+//						int temp = a[j];
+//						a[j]=a[j+1];
+//						a[j+1]=temp;
+						
+//						M-2						
+//						a[j] = a[j]^a[j+1];
+//						a[j+1] = a[j]^a[j+1];
+//						a[j] = a[j]^a[j+1];
+						
+//						M-3
+						a[j] = a[j] + a[j+1];
+						a[j+1] = a[j] - a[j+1];
+						a[j] = a[j] - a[j+1];
 						// System.out.println(a[j+1]+" "+a[j]);
 					}
 					else

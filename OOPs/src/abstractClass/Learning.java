@@ -34,6 +34,9 @@ package abstractClass;
 	 public int getAge() {    // abstract function should always be implemented in derived class
 		 return 2;
 	 }
+	 public int getNeckHeight() {
+		 return 50;
+	 }
  }
 public class Learning {
 
@@ -43,6 +46,8 @@ public class Learning {
 		Animal animal2 = new Giraffe();//this will only have functions which are also in animal class and overriding function.
 		System.out.println(animal1.getHeight());
 		System.out.println(animal2.getHeight());
+		System.out.println(animal2.getAge());
+		//System.out.println(animal2.getNeckHeight());
 	}
 
 }

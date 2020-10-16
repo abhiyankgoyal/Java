@@ -1,8 +1,6 @@
 package linkedList;
 //to check whether a cycle exist is linked list or not
-//by tortoise rabbit method
-
-import java.util.LinkedList;
+//by tortoise-rabbit method
 
 class Node10{
 	int data;
@@ -54,20 +52,15 @@ public class CyclicLinkedList {
 		if(head == null) {
 			return false;
 		}
-		else {
-			
-			 do{
-				rabbit = rabbit.next.next;
-				tortoise = tortoise.next;
-				if(rabbit == null || rabbit.next == null) {
-					return false;
-				}
-			}while(rabbit != tortoise);
-			 
-			return true;
-			
+		while(rabbit != null && rabbit.next != null) {
+			rabbit = rabbit.next.next;
+			tortoise = tortoise.next;
+			if(rabbit == tortoise) {
+				return true;
+			}
 		}
-		//return true;
+		 
+		return false;
 	}
 	
 	public void makeCycle() {
@@ -78,6 +71,7 @@ public class CyclicLinkedList {
 			np = np.next;
 		}
 		np.next = head.next;
+		//head.next = head;
 	}
 	
 	
@@ -114,11 +108,10 @@ public class CyclicLinkedList {
 		obj.insert(45);
 		obj.insert(85);
 		obj.insert(56);
-		//obj.insert(12);
+		obj.insert(12);
 		System.out.println(obj.checkCycle());
 		obj.makeCycle();
 		System.out.println(obj.checkCycle());
-		System.out.println(obj.checkCycle2());
 	}
 
 	

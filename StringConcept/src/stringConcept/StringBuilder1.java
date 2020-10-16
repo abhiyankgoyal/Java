@@ -26,14 +26,14 @@ public class StringBuilder1 {
 		System.out.println(sb);
 		sb.replace(0,1, "check"); // 1 is not included, it is from 0 to less than 1
 		System.out.println(sb);
-		sb.delete(1,4); // 2 is not included, it is from 1 to less than 4
+		sb.delete(1,4); // 2 is not included, it is from 1 to one less than 4
 		System.out.println(sb.toString()); // here StringBuilder is converted into string
 		String subString = sb.substring(4,8);
 		System.out.println(subString);
 		StringBuffer sbf = new StringBuffer("hello");
 		sbf.append(" world");
 		System.out.println(sbf);
-        
+        System.out.println(sb.substring(1,5));
         //StringBuilder1 sb = new StringBuilder1("abc");
 
 	}

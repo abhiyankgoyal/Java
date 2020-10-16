@@ -27,7 +27,7 @@ class House{
 		}
 		public int getArea()
 		{
-			return this.l*this.b;
+			return this.a;
 		}
 		
 		public String getName()

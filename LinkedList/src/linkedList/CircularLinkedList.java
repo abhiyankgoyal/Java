@@ -17,6 +17,19 @@ public class CircularLinkedList {
 	CircularLinkedList() {
 		head = null;
 	}
+	
+	public int length() {
+		int l=1;
+		Node4 np = head;
+		if(head == null) {
+			return 0;
+		}
+		do{
+			np = np.next;
+			l++;
+		}while(np.next != head);
+		return l;
+	}
 
 	public void insert(int val) {
 
@@ -34,7 +47,7 @@ public class CircularLinkedList {
 		
 		else
 		{
-			Node4 npInsert = new Node4(val);
+			//Node4 npInsert = new Node4(val);
 			
 			Node4 np = head;
 			
@@ -43,16 +56,52 @@ public class CircularLinkedList {
 				np = np.next;
 			}
 			
-			np.next = npInsert;
-			npInsert.next = head;
+			np.next = new Node4(val);//npInsert;
+			//npInsert.next = head;
+			np.next.next = head;
 			//System.out.println(head.data + " "+ ((head.next!=head) ? head.next.data : null) + " "+ ((head.next.next!=head) ? head.next.next.data : null));
 			
 		}
 	}
 	
+	public void delete(int pos) {
+		if(pos > length()) {
+			return;
+		}
+		if(head == null) {
+			return;
+		}
+		// deleteFromBeginning
+		else if(pos == 1) {
+			
+			if(head.next == head) {
+				head = null;
+				return;
+			}
+			Node4 np = head;
+			while(np.next != head) {
+				np = np.next;
+			}
+			np.next = np.next.next;
+			head = np.next;
+		}
+		// deleteFromBetweenOrEnd
+		else {
+			int count = 1;
+			Node4 np = head;
+			while(count != pos-1) {
+				np = np.next;
+				count++;
+			}
+			np.next = np.next.next;
+		}
+	}
+	
 	public void display()
 	{
-		
+		if(head == null) {
+			return;
+		}
 		Node4 np = head;
 		
 //		if(np.next == head)
@@ -77,13 +126,15 @@ public class CircularLinkedList {
 		CircularLinkedList cl = new CircularLinkedList();
 		
 		cl.insert(23);
-		System.out.println("-----");
 		cl.display();
 		System.out.println("----");
 		cl.insert(45);
-		//cl.display();
+		cl.display();
+		System.out.println("----");
 		cl.insert(76);
-		
+		cl.display();
+		System.out.println("----");
+		cl.delete(4);
 		cl.display();
 
 	}

@@ -49,7 +49,7 @@ public class LinkedList2
 
 		while(np != null)
 		{
-			System.out.println(np.data + " ");
+			System.out.print(np.data + " ");
 			np = np.next;
 		}
 	}
@@ -95,6 +95,9 @@ public class LinkedList2
 			{
 				Node1 adjacent = np.next.next;
 				np.next = adjacent;
+				
+				// or
+				// np = np.next.next;
 			}
 		}
 		return head;
@@ -104,6 +107,9 @@ public class LinkedList2
 	{
 		Node1 np = head;
 		head = np.next;
+		
+		// or 
+		// head = head.next;
 		return head;
 	}
 	
@@ -133,13 +139,13 @@ public class LinkedList2
 		obj1.insert(head1, 78);
 		obj1.insert(head1, 45);
 		
-		System.out.println("linked list 1: ");
+		System.out.print("linked list 1: ");
 
 		obj1.display(head1);
 
 		head1 = obj1.delete(head1, 4);
 		
-		System.out.println("new linked list 1: ");
+		System.out.print("\nnew linked list 1: ");
 
 		obj1.display(head1);
 		
@@ -150,7 +156,7 @@ public class LinkedList2
 		obj2.insert(head2, 89);
 		obj2.insert(head2, 11);
 		
-		System.out.println("linked list 2: ");
+		System.out.print("\nlinked list 2: ");
 		
 		obj2.display(head2);
 		
@@ -158,7 +164,7 @@ public class LinkedList2
 		
 		obj3.joinLinkedLists(head1, head2);
 		
-		System.out.println("linked list 3: ");
+		System.out.print("\nlinked list 3: ");
 		
 		obj3.display(head1);
 		

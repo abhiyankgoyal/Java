@@ -1,4 +1,5 @@
 package polymorphism;
+
  class Animal {
 	private int height;
 	private int age;
@@ -56,6 +57,8 @@ public class Overriding {
 		// so it can only call giraffe class functions
 		// but since the type is of animal class,
 		// it can only call functions of giraffe class which are also in animal class and functions of animal class.
+		// therefore it can call getHeight() of giraffe class since it is overriden, getAge() of animal class.
+		// it cannot call getName() since it is in giraffe class. 
 		
 		// animal.getHeight()- 90
 		// animal.getAge() - 30

@@ -11,16 +11,16 @@ public class StaticPractice {
 	
 	public static void m2()
 	{
-		m1();
+		m1(); // one static method can directly call another static method
 		
 		StaticPractice sp = new StaticPractice();
 		
-		//System.out.println(a); since it is a static function therefore can't call directly class variable.
+		System.out.println(a); //it is a static function therefore can call directly class static variable.
 		
 		System.out.println(sp.a);
 		sp.a=4;
-		System.out.println(sp.a);
-		// m3(); since this is a static function and we cannot call non-static function directly, inside static function.
+		System.out.println(a);
+		//m3(); since this is a static function and we cannot call non-static function directly, inside static function.
 		//sp.m3();
 	}
 	
@@ -47,7 +47,7 @@ public class StaticPractice {
 		StaticPractice sp = new StaticPractice();
 		sp.m3();
 		
-		// a=3;
+		//a=3;
 		System.out.println(a);
 		
 	}

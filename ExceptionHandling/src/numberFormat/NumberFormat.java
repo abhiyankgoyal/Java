@@ -1,6 +1,6 @@
 package numberFormat;
 
-public class NumberFormat {
+public class numberFormat {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -16,7 +16,7 @@ public class NumberFormat {
 //			System.out.println("exception handled");
 //		}
 //		System.out.println("execution continues");
-	
+//	}
 	
 	//----------------------------------------------------
 	

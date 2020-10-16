@@ -10,6 +10,7 @@ public class DivideByZero {
 		try {
 			c=a/b;
 		}
+		//multiple catch block
 		catch(ArithmeticException e) {
 			System.out.println(e + " I found an exception");
 		}

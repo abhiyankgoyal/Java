@@ -67,20 +67,20 @@ public class StringSort {
 		strarr[3] = new String("xxxxy");
 		strarr[4] = new String("xxx");
 		
-		System.out.println("string array before sorting:\n");
+		System.out.println("string array before sorting:");
 		for(int i=0; i<strarr.length; i++)
 		{
-		System.out.println(strarr[i]);
+			System.out.println(strarr[i]);
 		}
 		
 		StringSort ss = new StringSort();
-		
+		//java.util.Arrays.sort(strarr);
 		ss.insertionSort(strarr);
 		
 		System.out.println("\nstring array after sorting:\n");
 		for(int i=0; i<strarr.length; i++)
 		{
-		System.out.println(strarr[i]);
+			System.out.println(strarr[i]);
 		}
 		
 		String key;

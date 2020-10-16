@@ -28,7 +28,17 @@ public class StringArray {
 		{
 			System.out.print(sarr[i] + " ");
 		}
-
+		System.out.println();
+		String[] s = {"abhiyank", "Mayank", "Suresh", "Alekha", "Goyal"};
+		for(String str : s) {
+			System.out.print(str + " ");
+		}
+		if(strarr[0]==sarr[0]) {
+			System.out.println("\nsame");
+		}
+		else {
+			System.out.println("\nnot same since they are objects");
+		}
 	}
 
 }

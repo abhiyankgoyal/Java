@@ -26,7 +26,7 @@ public class LcmUsingHcf {
 	
 	public static int gcdOfArray(int[] arr) {
 		int gcd=arr[0];
-		for(int i=1; i<arr.length; i++) {
+		for(int i=0; i<arr.length; i++) {
 			gcd = gcdOfTwoNos(gcd, arr[i]);
 		}
 		return gcd;
@@ -44,7 +44,7 @@ public class LcmUsingHcf {
 		// TODO Auto-generated method stub
 		System.out.println(lcmOfTwoNos(30, 50));
 		System.out.println(gcdOfTwoNos(70, 70));
-		int[] arr = {2,5,7};
+		int[] arr = {4,10,14};
 		System.out.println(gcdOfArray(arr));
 		System.out.println(lcmOfArray(arr));
 	}

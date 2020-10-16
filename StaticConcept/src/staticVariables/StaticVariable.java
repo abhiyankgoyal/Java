@@ -3,12 +3,15 @@ package staticVariables;
  * 
  * -----------------Static variable-------------------
  * -Static variable can be a class variable not a local variable of any function since it is global for that class
- * -Static variable is same for every object and if once changed then it is changed for every object.
+ * -Static variable is same for every object and if once changed then it is changed for every object. every object points to the same static variable
  * 
  * To access it:
  * - by creating object
  * - by classname since it is global
  * - by directly varibale name if accessing in the same class;
+ * 
+ * Advantages of static variable:
+ * -It makes your program memory efficient (i.e., it saves memory).
  * 
  */
 
@@ -38,9 +41,9 @@ public class StaticVariable {
 		 
 		 sv.a = 9;
 		 
-		 sv.setB(10);
+		 sv.setB(10); 
 		 
-		 System.out.println("value of b  for sv object after change: "+sv.b);
+		 System.out.println("value of b for sv object after change: "+sv.b);
 		 System.out.println("value of static variable a for sv object after change: "+sv.a);
 		 
 		 StaticVariable sv2 = new StaticVariable();

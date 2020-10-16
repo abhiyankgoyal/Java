@@ -53,7 +53,6 @@ public class multilevelInheritance {
 		B obj2 = new B(170, 80);
 		System.out.println(obj2.getHeight());
 		System.out.println(obj2.getWeight());
-		
 	}
 
 }

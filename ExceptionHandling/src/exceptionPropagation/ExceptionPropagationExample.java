@@ -20,7 +20,7 @@ public class ExceptionPropagationExample {
 	}
 
 	public void x() {
-		//throw new java.io.IOException("device error");  checked exception hence cannot be propagated without throws keyword with method signature 
+		//throw new java.io.IOException("device error"); checked exception hence cannot be propagated without throws keyword with method signature 
 	}
 	
 	public static void main(String[] args) {

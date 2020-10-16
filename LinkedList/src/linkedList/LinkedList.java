@@ -19,7 +19,7 @@ public class LinkedList {
 //	
 //	LinkedList()
 //	{
-//		head = null; // doubt
+//		this.head = null; // doubt
 //	}
 	
 //	public void insertAtLast(int val)
@@ -48,9 +48,12 @@ public class LinkedList {
 	{
 		Node np = head;
 		
+		if(head == null) {
+			return;
+		}
 		while(np != null )
 		{
-			System.out.println(np.data+ " ");
+			System.out.print(np.data+ " ");
 			np = np.next;
 		}
 	}
@@ -140,25 +143,26 @@ public class LinkedList {
 		n2.next = n3;
 		n3.next = n4;
 		
-		System.out.println("Linked List :");
+		System.out.print("Linked List : ");
 		
 		obj.display(head);
+		System.out.println();
 		
-		head = obj.insertAtFirst(head,78);
+		head = obj.insertAtFirst(head,78); // here copy of head goes..not the actual reference of head.. therefore if head is changed in the function then head reference must be changed.
 		
-		System.out.println("new Linked List :");
+		System.out.print("new Linked List : ");
 		
 		obj.display(head);
 		
 		obj.replaceValAtNode(head, 2, 100);
 		
-		System.out.println("new Linked List :");
+		System.out.print("\nnew Linked List : ");
 		
 		obj.display(head);
 		
 		obj.insertAtLast(head, 200);
 		
-		System.out.println("new Linked List :");
+		System.out.print("\nnew Linked List : ");
 		
 		obj.display(head);
 		

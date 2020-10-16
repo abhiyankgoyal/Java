@@ -106,8 +106,8 @@ public class Housebinarysearch {
 		
 		String s1 = new String("fghj");
 		String s2 = new String("fghj");
-		String s3 = "yhn";
-		String s4 = "yhn";
+		//String s3 = "yhn";
+		//String s4 = "yhn";
 		System.out.println(s1);
 		if(s1 == s2) {                // here objects are compared which can never be same.
 			System.out.println("s1 and s2 are same");

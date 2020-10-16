@@ -32,6 +32,9 @@ public class DoublyLinkedList {
 		if(head == null)
 		{
 			head = npInsert;
+			// OR
+			//head = new Node5(val);
+			return;
 		}
 		
 		else
@@ -45,9 +48,24 @@ public class DoublyLinkedList {
 			}
 			
 			np.next = npInsert;
-			npInsert.prev = np;	
+			npInsert.prev = np;
+			// OR
+			//np.next = new Node5(val);
+			//np.next.prev = np;
 		}
 		
+	}
+	
+	public void insertInBetween(int val, int pos) {
+		Node5 npInsert = new Node5(val);
+		int count = 1;
+		Node5 np = head;
+		while(count != pos-1) {
+			np = np.next;
+		}
+		npInsert.next = np.next;
+		np.next = npInsert;
+		npInsert.prev = np;
 	}
 	
 	public void display()
