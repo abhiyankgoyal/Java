@@ -57,7 +57,10 @@ public class StackWithArray {
 	
 	public void display()
 	{
-		
+		if(top == -1) {
+			System.out.println("Stack is empty");
+			return;
+		}
 		for(int i=0; i<=top; i++)
 		{
 			System.out.print(arr[i]+ " ");

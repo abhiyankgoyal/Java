@@ -34,8 +34,10 @@ public class StringBuilder1 {
 		sbf.append(" world");
 		System.out.println(sbf);
         System.out.println(sb.substring(1,5));
-        //StringBuilder1 sb = new StringBuilder1("abc");
-
+        StringBuilder sb2 = new StringBuilder("abc dflhsl");
+        System.out.println(sb2);
+        String s = "ndfj jdvdj";
+        System.out.println(s);
 	}
 
 }

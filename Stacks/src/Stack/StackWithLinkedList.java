@@ -163,7 +163,7 @@ public class StackWithLinkedList {
 		Stack<Double> stack2 = new Stack<Double>(); // double datatype linkedlist
 		stack2.push(3.0); 
 		
-		Stack s = new Stack(); // mixed data type linke list
+		Stack s = new Stack(); // mixed data type linked list
 		s.push(90);
 		s.push("abhiyank");
 		s.push(89.0);

@@ -19,47 +19,47 @@ class Node
 
 public class QueueWithLinkedList {
 
-	Node head;
-	Node tail;
+	Node front;
+	Node rear;
 	
 	QueueWithLinkedList()
 	{
-		this.head = null;
-		this.tail = null;
+		this.front = null;
+		this.rear = null;
 	}
 	
 	public void add(int val)
 	{
 		Node npInsert = new Node(val);
 		
-		if(head == null || tail == null)
+		if(front == null || rear == null)
 		{
-			head = npInsert;
-			tail = npInsert;
+			front = npInsert;
+			rear = npInsert;
 		}
 		
 		else
 		{
-			tail.next = npInsert;
-			tail = npInsert;
+			rear.next = npInsert;
+			rear = npInsert;
 		}
 	}
 	
 	public int remove()
 	{
-		if(head == null)
+		if(front == null)
 		{
 			System.out.println("Queue is empty");
 			return -1;
 		}
 		else
 		{
-			int a = head.data;
-			head = head.next;
+			int a = front.data;
+			front = front.next;
 			
-			if(head == null)
+			if(front == null)
 			{
-				tail = null;
+				rear = null;
 			}
 			return a;
 		}
@@ -67,14 +67,14 @@ public class QueueWithLinkedList {
 	
 	public int peek()
 	{
-		if(head == null)
+		if(front == null)
 		{
 			System.out.println("Queue is empty");
 			return -1;
 		}
 		else
 		{
-			return head.data;
+			return front.data;
 		}
 	}	
 	

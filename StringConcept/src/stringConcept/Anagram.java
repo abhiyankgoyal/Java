@@ -6,12 +6,12 @@ public class Anagram {
 	
 	public String checkAnagram(String s1, String s2) {
 		
-		if(s1 == null || s2 == null || s1.length() == 0 || s2.length() == 0 || s1.length() != s2.length()) {
+		if(s1 == null || s2 == null || s1.length() != s2.length()) {
 			return "NO";
 		}
 		s1 = s1.toLowerCase();
 		s2 = s2.toLowerCase();
-		System.out.println(s1);
+		//System.out.println(s1);
 		if(s1.equals(s2)) {
 			return "YES";
 		}

@@ -43,6 +43,15 @@ public class StringCompare {
 			System.out.println("values for both s1 and s2 are different 2nd else");
 		}
 		
+		String s5 = "mnop";
+		String s6 = "mnop";
+		if(s5 == s6) {
+			System.out.println("s5 and s6 are same");
+		}
+		else {
+			System.out.println("s5 and s6 are not same");
+		}
+		
 		/*
 		 * In s1.compareTo(s2)
 		 * if s1 is greator than s2 then it will return > 0,

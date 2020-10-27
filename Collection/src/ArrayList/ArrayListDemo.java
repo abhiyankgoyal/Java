@@ -41,7 +41,7 @@ public class ArrayListDemo {
 		al2.add(9);
 		al2.add(8);
 		al2.add(7);
-		al2.add(6);
+		al2.add(7);
 		al2.add(5);
 		al2.add(4);
 		al2.add(9);
@@ -52,6 +52,9 @@ public class ArrayListDemo {
 		System.out.println(al2);
 		int index = Collections.binarySearch(al2, 9);
 		System.out.println(index);
+		
+		System.out.println(((al2.get(2) == al2.get(3)))? "t": "f");
+		System.out.println((al2.get(2)).equals(al2.get(3))? "t": "f");
 	}
 
 }
