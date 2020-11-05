@@ -27,7 +27,7 @@ public class PerfectSquare {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		PerfectSquare obj = new PerfectSquare();
-		System.out.println(obj.check(1));
+		System.out.println(obj.check(0));
 	}
 
 }

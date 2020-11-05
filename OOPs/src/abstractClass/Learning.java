@@ -45,6 +45,7 @@ public class Learning {
 		Giraffe animal1 = new Giraffe();//this will have all the data members and member function of the giraffe class and animal class which are not private.
 		Animal animal2 = new Giraffe();//this will only have functions which are also in animal class and overriding function.
 		System.out.println(animal1.getHeight());
+		System.out.println(animal1.getNeckHeight());
 		System.out.println(animal2.getHeight());
 		System.out.println(animal2.getAge());
 		//System.out.println(animal2.getNeckHeight());

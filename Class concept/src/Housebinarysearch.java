@@ -81,7 +81,7 @@ public class Housebinarysearch {
 		House1 h5=new House1(70,50);
 		
 		System.out.println(h5);
-		
+		//House1[] houses = new House1[5];
 		House1[] houses= {h1,h2,h3,h4,h5};
 		
 		Housebinarysearch h=new Housebinarysearch();

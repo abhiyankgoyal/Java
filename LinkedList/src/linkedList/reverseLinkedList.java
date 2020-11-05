@@ -58,22 +58,21 @@ public class reverseLinkedList {
 	}
 	
 	public void reverse() {
+		
 		if(head == null) {
 			System.out.println("linkedlist is empty");
 		}
-		else{
-			Node6 prev = null;
-			Node6 next = null;
-			Node6 np = head;
-			
-			while(np != null) {
-				next = np.next;
-				np.next = prev;
-				prev = np;
-				np = next;
-			}
-			head = prev;
+		Node6 prev = null;
+		Node6 next = null;
+		Node6 np = head;
+		
+		while(np != null) {
+			next = np.next;
+			np.next = prev;
+			prev = np;
+			np = next;
 		}
+		head = prev;	
 	}
 
 	public static void main(String[] args) {

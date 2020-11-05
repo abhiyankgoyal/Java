@@ -1,5 +1,5 @@
 package map;
-
+import java.io.*;
 import java.util.*;
 
 public class HashMapDemo {
@@ -33,9 +33,28 @@ public class HashMapDemo {
 		System.out.println(m3);
 		Set m4 = m.entrySet();
 		System.out.println(m4);
-		for(Object obj : m4) {
-			Map.Entry m5 = (Map.Entry)m4;
-			System.out.println(m5.getKey());
+//		for(Object obj : m4) {
+//			Map.Entry m5 = (Map.Entry)m4;
+//			System.out.println(m5.getKey());
+//		}
+		
+		String s = "abhiyankGoyal";
+		s=s.toLowerCase();
+		
+		HashMap<Character, Integer> m5 = new HashMap<>();
+		char[] c = s.toCharArray();
+		for(int i=0; i<s.length(); i++) {
+			if(m5.containsKey(s.charAt(i))) {
+				m5.put(s.charAt(i), m5.get(s.charAt(i)) + 1);
+			}
+			else {
+				m5.put(s.charAt(i), 1);
+			}
+		}
+		
+		Set ss = m5.entrySet();
+		for(Map.Entry e : m5.entrySet()) {
+			System.out.println(e.getKey() + " - " + e.getValue());
 		}
 	}
 

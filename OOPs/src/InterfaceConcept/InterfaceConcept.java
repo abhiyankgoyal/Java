@@ -10,7 +10,7 @@ package InterfaceConcept;
 interface Animal {
 	  public static final int height = 9;
 	  int getHeight();
-	  int getColor();
+	  String getColor();
 }
 interface Plant {
 	  int getHeight();
@@ -26,8 +26,8 @@ class Abc extends Giraffe {
 	public int getHeight() {
 		return 2;
 	}
-	public int getColor() {
-		return 4;
+	public String getColor() {
+		return "Blue";
 	}
 }
 public class InterfaceConcept {

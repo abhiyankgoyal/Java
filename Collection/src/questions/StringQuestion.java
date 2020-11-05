@@ -12,7 +12,7 @@ public class StringQuestion {
 		int count = 1;
 		int repeat = 0;
 		for(int i=1; i<str.length(); i++) {
-			for(int j=0; j<=i-1;j++) { // or j<i
+			for(int j=0; j<i;j++) { 
 				if(str.charAt(i) == str.charAt(j)) {
 					repeat = 1;
 					break;
@@ -46,15 +46,16 @@ public class StringQuestion {
 		if(str == null) {
 			return 0;
 		}
+		str=str.toLowerCase();
 		int count = 0;
 		int[] arr = new int[26];
 		for(int i=0; i<str.length();i++) {
 			char ch = str.charAt(i);
 			int index = ch - 'a'; // here ascii integer value of ch is stored in index
-			arr[index] = 1;
+			arr[index]++;
 		}
 		for(int i=0; i<arr.length; i++) {
-			if(arr[i] == 1) {
+			if(arr[i] > 0) {
 				count++;
 			}
 		}

@@ -19,7 +19,7 @@ public class ArrayListDemo {
 		System.out.println(al); // [A,10,A,null]...sqaure brackets becoz we have called reference of al...and reference is called by toString() method which adds square brackets
 		al.remove(2); // to remove object we need to give index of it...i.e. remove(int index)
 		System.out.println(al);
-		al.add(2,"M"); // to add object at in between of array thn give object and ndex t which it needs to be inserted
+		al.add(2,"M"); // to add object in between of array then give object and index t at which it needs to be inserted
 		System.out.println(al);
 		System.out.println(al.isEmpty()); // checks whether ArrayList is empty or not
 		ll.add(5); // it adds the object at the end
@@ -52,9 +52,47 @@ public class ArrayListDemo {
 		System.out.println(al2);
 		int index = Collections.binarySearch(al2, 9);
 		System.out.println(index);
+		Collections.sort(al2, Collections.reverseOrder());
+		System.out.println(al2);
+		System.out.println(al);
+		Collections.reverse(al);
+		System.out.println(al);
 		
 		System.out.println(((al2.get(2) == al2.get(3)))? "t": "f");
 		System.out.println((al2.get(2)).equals(al2.get(3))? "t": "f");
+		System.out.println(Integer.valueOf(al2.get(0)));
+		int max=Integer.MIN_VALUE;
+		for(int i=0; i<al2.size(); i++) {
+			if(al2.get(i) > max) {
+				max = al2.get(i);
+			}
+		}
+		System.out.println(max);
+		
+		if(al2.get(2) == al2.get(3)) {
+			System.out.println("t");
+		}
+		else {
+			System.out.println("f");
+		}
+		
+		for(int i=0; i<al2.size(); i++) {
+			if(al2.get(i) == 7) {
+				System.out.println(1);
+				break;
+			}
+		}
+		
+		List<Integer> al3 = new ArrayList<>();
+		al3.add(78);
+		al3.add(90);
+		al3.set(1, 1);
+		System.out.println(al3);
+		System.out.println(al3.contains(1));
+		al3.add(1,2);
+		System.out.println(al3);
+		al3.remove(0);
+		System.out.println(al3);
 	}
 
 }

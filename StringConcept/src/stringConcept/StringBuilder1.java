@@ -38,6 +38,7 @@ public class StringBuilder1 {
         System.out.println(sb2);
         String s = "ndfj jdvdj";
         System.out.println(s);
+        System.out.println(s.contains("ndfj "));
 	}
 
 }

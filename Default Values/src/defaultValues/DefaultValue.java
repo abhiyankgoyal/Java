@@ -10,7 +10,7 @@ package defaultValues;
  * */
 public class DefaultValue {	
 	
-	private  int c;
+	private int c;
 	private long l;
 	private double a;
 	private float f;
@@ -69,6 +69,8 @@ public class DefaultValue {
 		System.out.println(str.length());
 		int[] arr = {1,2,3,4,5,6};
 		System.out.println(arr.length);
+		System.out.println(Double.MAX_VALUE + ", " + Double.MIN_VALUE);
+		
 		
 	}
 

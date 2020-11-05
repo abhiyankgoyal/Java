@@ -44,7 +44,7 @@ public class Cararray {
 			System.out.println("Sorry no Car found");
 		}*/		
 		int s=0,e=cars.length-1;
-		int found =0; 
+		int flag = 0; 
 		int mid;
 		while(s<=e){
 
@@ -52,7 +52,7 @@ public class Cararray {
 			if(cars[mid].price==400000)
 			{
 				System.out.println(cars[mid].name);
-				found=1;
+				flag=1;
 				break;
 			}		
 			else if(cars[mid].price<800000)
@@ -64,7 +64,7 @@ public class Cararray {
 				e=mid-1;
 			}
 		}
-		if(found==0)
+		if(flag==0)
 		{
 			System.out.println("Sorry no car found");
 		}
